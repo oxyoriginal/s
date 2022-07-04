@@ -1,0 +1,20 @@
+{% extends 's_app/base.html' %}
+
+{% block title %}
+    spa
+{% endblock %}
+
+{% block top %}
+{% endblock %}
+
+{% block content %}
+		<div id='brows2'>
+			{% for el in data2 %}
+				<a  href='{% url "showservice" el.id %}'>{{ el.title }}</a>
+			{% endfor %}
+		</div>
+        <div class='spa'>
+			<div class='maps'>
+			</div>
+		</div>
+{% endblock %}

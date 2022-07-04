@@ -1,0 +1,19 @@
+{% extends 's_app/base.html' %}
+
+{% block title %}
+    Enter
+{% endblock %}
+
+{% block top %}
+{% endblock %}
+
+{% block content %}
+    <h3>Enter</h3>
+    <div>
+        <form method='POST'>
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type='submit'>Login</button>
+        </form>
+    </div>
+{% endblock %}

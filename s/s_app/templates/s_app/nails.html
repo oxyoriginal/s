@@ -1,0 +1,20 @@
+{% extends 's_app/base.html' %}
+
+{% block title %}
+    nails
+{% endblock %}
+
+{% block top %}
+{% endblock %}
+
+{% block content %}
+		<div class='brows2'>
+			{% for el in data2 %}
+				<a href="{% url 'showservice' el.id %}">{{ el.title }}</a>
+			{% endfor %}
+		</div>
+        <div class='nails' id='nails'>
+			<div class='maps'>
+			</div>
+		</div>
+{% endblock %}

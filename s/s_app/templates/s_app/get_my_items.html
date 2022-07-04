@@ -1,0 +1,20 @@
+{% extends 's_app/base.html' %}
+
+{% block title %}
+    user
+{% endblock %}
+
+{% block top %}
+{% endblock %}
+
+{% block content %}
+        <div class='lashes'>
+			{% if request.user.is_authenticated %}
+				<a href='{% url "get_my_items" %}'> {{ request.user }} </a>
+			{% else %}
+				<a class='brows2' href='#'>Sign up</a>
+			{% endif %}
+		</div>
+		<div class='maps'>
+		</div>
+{% endblock %}

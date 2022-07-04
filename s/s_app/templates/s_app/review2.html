@@ -1,0 +1,22 @@
+{% extends 's_app/base.html' %}
+
+{% block title %}
+
+{% endblock %}
+
+{% block top %}
+{% endblock %}
+
+{% block content %}
+
+	{% for service in data3 %}
+
+		<div class='review'>
+            ЭТО ПРОБНАЯ СТРАНИЦА ДЛЯ ДОБАВЛЕНИЯ РЕДАКТИРОВАНИЯ И УДАЛЕНИЯ ДАННЫХ
+		<h4>{{ service.title }}</h4>
+		<p>{{ service.text }}</p>
+		<p class='p'>Отзыв в категории {{ service.category }} написан {{ service.date }} пользователем {{ service.user }}</p>
+		<br>
+		</div>
+	{% endfor %}
+{% endblock %}

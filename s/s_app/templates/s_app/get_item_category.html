@@ -1,0 +1,22 @@
+{% extends 's_app/base.html' %}
+
+{% block title %}
+	user
+{% endblock %}
+
+{% block top %}
+	{{ category.short_name }}
+{% endblock %}
+
+{% block content %}
+	{% for art in data2 %}
+        <div class='namecategory'>
+			{{ art.title }}
+				<p>{{ art.text}} by <a href='#'>{{ art.user }}</a></p>
+			<p>[ edited {{ art.edit_count }} times ]</p>
+			<p>{{ art.summary }}</p>
+			<div class='maps'>
+			</div>
+		</div>
+	{% endfor %}
+{% endblock %}

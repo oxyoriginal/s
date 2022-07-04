@@ -1,0 +1,20 @@
+{% extends 's_app/base.html' %}
+
+{% block title %}
+    service
+{% endblock %}
+
+{% block top %}
+{% endblock %}
+
+{% block content %}
+        <div class='brows' id='brows'>
+			<div class='maps'>
+			</div>
+		</div>
+		<div class='brows2'>
+            <p> {{ dataservice.title }} </p>
+            <p> {{ dataservice.text }} </p>
+			<p> {{ dataservice.price }} </p>
+		</div>
+{% endblock %}
