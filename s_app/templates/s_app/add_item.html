@@ -1,0 +1,22 @@
+{% extends 's_app/base.html' %}
+
+{% block title %}
+    add_item
+{% endblock %}
+
+{% block top %}
+{% endblock %}
+
+{% block content %}
+    {% if msg == 'ok' %}
+        <h3>Saved!</h3>
+    {% endif %}
+
+    <form method='post' enctype='multipart/form-data'>
+        {% csrf_token %}
+        <p>Type title : {{ form.title }}</p>
+        <p>Select category: {{ form.category }}</p>
+        <p style="top" >Type text: {{ form.text }}</p>
+        <button class='btn btn-primary my-4' type='submit'>Submit</button>
+    </form>
+{% endblock %}

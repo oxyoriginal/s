@@ -1,0 +1,28 @@
+{% extends 's_app/base.html' %}
+
+{% block title %}
+    contact
+{% endblock %}
+
+{% block top %}
+{% endblock %}
+
+{% block content %}
+        <div class='fifthpage'>
+			<h4>КОНТАКТЫ</h4>
+			<div>
+			Режим работы: {{ data1.timework }}
+			</div>
+			<div>
+			Адрес: {{ data1.address }}
+			</div>
+			<div>
+			Телефон: {{ data1.tel }}
+			</div>
+			<div>
+			Электронная почта: {{ data1.email }}
+			</div>
+			<div class='maps'>
+			</div>
+		</div>
+{% endblock %}

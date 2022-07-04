@@ -1,0 +1,260 @@
+
+.article {
+    display:flex;
+    justify-content:space-around;
+    background-color:#fa4e86;
+    padding:40px;
+}
+
+.user{
+    background-color:#fa4e86;
+    padding:10px;
+    font-size:26px;
+    text-align:center;
+    color:#fed9d8;
+}
+
+.review {
+    background-color:#e4bdf6;
+    padding:20px;
+    font-size:36px;
+    text-align:center;
+    color:#7B68EE;
+}
+
+.p {
+    color:	#b025b8;
+    font-size:20px;
+}
+
+.top {
+    background-color:#c5dafe;
+    text-align:center;
+    font-size:26px;
+}
+
+.namecategory{
+    display:flex;
+    justify-content:space-around;
+    color:red;
+    background-color:#fa4e86;
+    padding:40px;
+    font-size:46px;
+    text-align:center;
+
+}
+
+.brows, .lashes, .nails, .hair, .massage, .spa, .category {
+    background-color:#fa4e86;
+    padding:100px;
+    font-size:46px;
+    text-align:center;
+    color:#fed9d8;
+}
+.brows2, .lashes2, .nails2, .hair2, .massage2, .spa2, .category2 {
+    display:flex;
+    justify-content:space-around;
+    background-color:#fa4e86;
+    padding:40px;
+    font-size:36px;
+    text-align:center;
+    color:#fed9d8;
+}
+
+.header {
+	background-color:#feefe3;
+	font-size:26px;
+	display:flex;
+	justify-content:space-around;
+	padding: 20px;
+}
+
+a {
+	text-decoration:none;
+}
+
+.logo {
+	background-image: url(../img/logo.png);
+	width:64px;
+	height:64px;
+}
+
+.firstpage {
+	background-color:#c5dafe;
+	background-image: url(../img/onepage.jpg);
+	height:900px;
+	
+}
+
+.name {
+	font-size:144px;
+	text-align:center;
+	padding-top:60px;
+	
+}
+
+.tagline {
+	font-size:80px;
+	text-align:center;
+	padding-top:60px;
+	font-style:italic;
+	
+}
+
+.secondpage {
+	background-color:#feefe3;
+	font-size:30px;
+	text-align:center;
+	padding:40px;
+}
+
+.second {
+	background-image: url(../img/twopage.jpg);
+	height:500px;
+}
+
+.thirdpage {
+	background-color:#c1bbfe;
+	font-size:30px;
+	text-align:center;
+	padding:40px;
+	line-height: 2;
+}
+
+
+.b {
+	background-image: url(../img/b.jpg);
+	height:400px;
+	width:200px;
+}
+
+.r {
+	background-image: url(../img/r.jpg);
+	height:400px;
+	width:200px;
+}
+
+
+.n {
+	background-image: url(../img/n.jpg);
+	height:400px;
+	width:200px;
+}
+
+.v {
+	background-image: url(../img/v.jpg);
+	height:400px;
+	width:200px;
+}
+
+.m {
+	background-image: url(../img/m.jpg);
+	height:400px;
+	width:200px;
+}
+
+
+
+.s {
+	background-image: url(../img/s.jpg);
+	height:400px;
+	width:200px;
+}
+
+.service {
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:wrap;
+	flex-wrap: initial;
+}
+
+
+.fouthpage {
+	background-color:#d4bffe;
+	font-size:30px;
+	text-align:center;
+	padding:60px;
+}
+
+.fouth {
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+	
+}
+
+.one {
+	background-image: url(../img/1.jpg);
+	height:500px;
+	width:500px;
+	margin:20px;
+}
+
+.two {
+	background-image: url(../img/2.jpg);
+	height:500px;
+	width:500px;
+	margin:20px;
+}
+
+.three {
+	background-image: url(../img/3.jpg);
+	height:500px;
+	width:500px;
+	margin:20px;
+}
+
+.four {
+	background-image: url(../img/4.jpg);
+	height:500px;
+	width:500px;
+	margin:20px;
+}
+
+.five {
+	background-image: url(../img/5.jpg);
+	height:500px;
+	width:500px;
+	margin:20px;
+}
+
+.six {
+	background-image: url(../img/6.jpg);
+	height:500px;
+	width:500px;
+	margin:20px;
+}
+
+
+.fifthpage {
+	background-color:#e7bdf4;
+	font-size:30px;
+	text-align:center;
+    padding:40px;
+}
+
+.maps {
+    background-image: url(../img/6.jpg);
+    height:400px;
+	width:100%;
+}
+
+
+.footer {
+	background-color:#feabd3;
+	padding:40px;
+	text-align:center;
+}
+
+
+
+
+
+
+/*
+
+
+
+
+
+*/

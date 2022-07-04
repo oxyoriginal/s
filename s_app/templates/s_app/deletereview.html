@@ -1,0 +1,20 @@
+{% extends 's_app/base.html' %}
+
+{% block title %}
+    delete
+{% endblock %}
+
+{% block top %}
+{% endblock %}
+
+{% block content %}
+    <div>
+    <form method='POST' enctype='multipart/form-data'>
+          {% csrf_token %}
+          <p>Type title : {{ form.title }} </p>
+          <p>Select category: {{ form.category }}</p>
+          <p><span style='top'>Type text: </span> {{ form.text }} </p>
+          <button type='submit'>Delete</button>
+    </form>
+    </div>
+{% endblock %}

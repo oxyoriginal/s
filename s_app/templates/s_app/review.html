@@ -1,0 +1,22 @@
+{% extends 's_app/base.html' %}
+
+{% block title %}
+	review
+{% endblock %}
+
+{% block top %}
+{% endblock %}
+
+{% block content %}
+	{% for service in data3 %}
+		<div class='review'>
+		<h4>{{ service.title }}</h4>
+		<p>{{ service.text }}</p>
+		<p class='p'>Отзыв в категории {{ service.category }} написан {{ service.date }} пользователем {{ service.user }}</p>
+		<a href="{% url 'update_item' service.id %}">Edit<a>
+		<a href="{% url 'delete_item' service.id %}">Delete<a>
+		<br>
+		</div>
+	{% endfor %}
+
+{% endblock %}

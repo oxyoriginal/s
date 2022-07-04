@@ -1,0 +1,34 @@
+{% extends 's_app/base.html' %}
+
+{% block title %}
+    search
+{% endblock %}
+
+{% block top %}
+{% endblock %}
+
+{% block content %}
+
+    <h3>Search</h3>
+    <div>
+        <form method='POST' enctype='multipart/form-data'>
+            {% csrf_token %}
+            <p><span style='top'> Search text: </span>{{ form.searchtext }} <span>Where : </span> {{ form.where }} </p>
+            <p><span style='top'>Price : </span> {{ form.count }} {{ form.price_edit }} </p>
+            <button type='submit'>Search</button>
+        </form>
+    </div>
+
+    {% if data1 %}
+        <h3>SearchResult</h3>
+        {% for service in data1 %}
+            <div>
+                <h2> {{ service.title }} </h2>
+                <p> {{ service.text }}</p>
+                <p> {{ service.price }}</p>
+                <br>
+            </div>
+        {% endfor %}
+    {% endif %}
+
+{% endblock %}

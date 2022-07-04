@@ -1,0 +1,19 @@
+{% extends 's_app/base.html' %}
+
+{% block title %}
+    registration
+{% endblock %}
+
+{% block top %}
+{% endblock %}
+
+{% block content %}
+    <h3>Registration</h3>
+    <div>
+        <form method='POST'>
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type='submit'>Registration</button>
+        </form>
+    </div>
+{% endblock %}

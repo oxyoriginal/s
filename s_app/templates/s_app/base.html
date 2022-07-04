@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset='UTF-8'>
+		<title>Site {% block title %}{% endblock %}</title>
+		<link rel='stylesheet' href='{% static "s_app/css/style.css" %}' type='text/css'>
+	</head>
+	<body>
+		<div class='header'>
+			<div class='logo'>
+			</div>
+			<div class='menu'>
+				<a href='{% url "main" %}'>Main</a>
+				<a href='{% url "about" %}'>About</a>
+				<a href='{% url "services" %}'>Services</a>
+				<a href='{% url "gallery" %}'>Gallery</a>
+				<a href='{% url "contact" %}'>Contact</a>
+				<a href='{% url "search" %}'>Search</a>
+			</div>
+			<div class='user'>
+				{% if request.user.is_authenticated %}
+					<a class='user' href='{% url "add_item" %}'>New review</a>
+					<a class='user' href='{% url "review" %}'>{{ request.user }}</a>
+					<a class='user' href='{% url "logout" %}'>Logout</a>
+				{% else %}
+					<a class='user' href='{% url "login" %}'>Sign in</a>
+					<a class='user' href='{% url "registration" %}'>Sign up</a>
+				{% endif %}
+			</div>
+		</div>
+		<div class='article'>
+			{% for el in data %}
+				<a href='{% url "showcategory" el.id %}'>{{ el.short_name }}</a>
+			{% endfor %}
+		</div>
+		<div class='top'>
+			{% block top %}{% endblock top %}
+		</div>
+		<div class='content'>
+			{% block content %}{% endblock content %}
+		</div>
+		<div class='footer'>
+			MADE BY OKSANA PRIKHODKO
+		</div>
+	</body>
+</html>
+
